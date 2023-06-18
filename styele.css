@@ -28,6 +28,33 @@ a{
     text-decoration: none;
     color: #000;
 }
+.dark-mode{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.dark-mode:before {
+    content: 'DarkMode';
+}
+.dark{
+    display: flex;
+    max-width: 25px;
+    max-height: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+.dark-active{
+    background-color: #253A44;
+}
+.darkColor-active:before {
+    color: #fff;
+    content: 'LightMode';
+}
 .navbar{
     display: flex;
     max-width: 1300px;
@@ -40,8 +67,8 @@ a{
     height: 100%;
 }
 .navbar-brand img{
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 200px;
     padding: 10px 10px;
 }
 .navbar-collapse{
@@ -58,15 +85,17 @@ a{
     padding-right: 20px;
     padding-left: 20px;
     border: 1px solid #198754;
+    background-color: #198754;
     border-radius: 5px;
     margin: 5px;
     cursor: pointer;
-    color: #198754;
+    color: #fff;
     transition: .5s;
 }
 .nav-item a:hover{
-    color: #fff;
-    background-color: #198754;
+    color: #198754;
+    border: 1px solid #198754;
+    background-color: #fff;
 }
 .burger{
     display: none;
@@ -184,6 +213,9 @@ li{
 
 /*----------Medias Queries----------*/
 @media (max-width:1300px){
+    .dark-mode{
+        max-width: 900px;
+    }
     .navbar{
         max-width: 900px;
     }
@@ -201,6 +233,9 @@ li{
 @media (max-width: 900px){
     body {
         overflow-x: hidden;
+    }
+    .dark-mode{
+        max-width: 660px;
     }
     .navbar-nav{
         position: absolute;
