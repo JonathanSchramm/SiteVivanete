@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIVANETE</title>
+  <link rel='shortcut icon' href='#' type='image/x-icon'/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styele.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo VIVANETE telecom.webp" alt="">
+      </a>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+        </ul>
+      </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+  <hr>
+  <ul class="content">
+    <div class="content-social">
+      <li>
+        <div id="social" style="font-weight: bold;">
+          <a data-id="24817" href="https://www.facebook.com/Vivanete/" class="facebook dt_social" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i> 
+            <b>Facebook</b>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div id="social" style="font-weight: bold;">
+          <a data-id="24817" href="https://instagram.com/vivaneteinternet?utm_medium=copy_link" class="instagram dt_social" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i> 
+            <b>Instagram</b>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div id="social" style="font-weight: bold;">
+          <a data-id="24817" href="https://wa.me/554930602020" class="whatsapp dt_social" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i> 
+            <b>WhatsApp</b>
+          </a>
+        </div>
+      </li>
+    </div>
+    <li>
+      <div id="social" style="font-weight: bold;">
+        <a data-id="24817" href="http://189.113.95.3/central/login.php" class="segunda-via dt_social" target="_blank" title="Segunda via">
+          <b>SEGUNDA VIA</b>
+        </a>
+      </div>
+    </li>
+  </ul>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <img src="img/carousel img3.png" alt="">
+    </div>
+    <div class="item">
+      <img src="img/carousel img4.png" alt="">
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        responsive: {
+          0: {
+            items : 1
+          }
+        },
+        autoplay: true,
+        autoplayHoverPause:false,
+      })
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
