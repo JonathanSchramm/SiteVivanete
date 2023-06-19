@@ -95,7 +95,7 @@ a{
 .nav-item a:hover{
     color: #198754;
     border: 1px solid #198754;
-    background-color: #fff;
+    background-color: transparent;
 }
 .burger{
     display: none;
@@ -154,7 +154,7 @@ li{
 .content a.facebook:hover {
     border: 1px solid #4861a3;
     color: #4861a3;
-    background-color: #fff;
+    background-color: transparent;
 }
 .content a.instagram {
     border: 1px solid #C2185B;
@@ -165,7 +165,7 @@ li{
 .content a.instagram:hover {
     border: 1px solid #C2185B;
     color: #C2185B;
-    background-color: #fff;
+    background-color: transparent;
 }
 .content a.whatsapp {
     border: 1px solid #40C351;
@@ -176,7 +176,7 @@ li{
 .content a.whatsapp:hover {
     border: 1px solid #40C351;
     color: #40C351;
-    background-color: #fff;
+    background-color: transparent;
 }
 .content a.segunda-via {
     border: 1px solid #d3af6e;
@@ -187,7 +187,7 @@ li{
 .content a.segunda-via:hover {
     border: 1px solid #d3af6e;
     color: #d3af6e;
-    background-color: #fff;
+    background-color: transparent;
 }
 .owl-carousel{
     margin: 1rem auto;
@@ -209,7 +209,60 @@ li{
     margin: auto;
     max-height: 450px;
 }
-
+.card-main{
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+.cards li{
+    width: 100%;
+}
+.cards li:first-child h4{
+    background-color: rgb(42 163 27);
+    color: #fff;
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 24px;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.cards li:nth-child(2) h4{
+    background-color: #c2185b;
+    color: #fff;
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 24px;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.cards li:nth-child(3) h4{
+    background-color: #ff8100;
+    color: #fff;
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 24px;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
 
 /*----------Medias Queries----------*/
 @media (max-width:1300px){
@@ -227,6 +280,12 @@ li{
     }
     .owl-carousel{
         max-width: 900px;
+    }
+    .card-main{
+        max-width: 900px;
+    }
+    .cards li h4{
+        font-size: 12px!important;
     }
 }
 
@@ -288,6 +347,21 @@ li{
     }
     .owl-carousel{
         max-width: 660px;
+    }
+    .card-main{
+        max-width: 660px;
+    }
+    .cards{
+        display: grid;
+        justify-content: stretch;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .cards li{
+        width: 100%;
+    }
+    .cards li h4{
+        justify-content: center;
     }
 }
 /*----------Medias Queries----------*/
