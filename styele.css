@@ -47,6 +47,7 @@ a{
     justify-content: center;
     flex-direction: row;
     cursor: pointer;
+    width: 100%;
 }
 .dark-active{
     background-color: #253A44;
@@ -54,6 +55,9 @@ a{
 .darkColor-active:before {
     color: #fff;
     content: 'LightMode';
+}
+.darkLightMode-active{
+    color: #fff;
 }
 .navbar{
     display: flex;

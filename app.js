@@ -21,6 +21,7 @@ function darkMode() {
     darkMode.addEventListener('click', () => {
         bodyDarkMode.classList.toggle('dark-active');
         colorDark.classList.toggle('darkColor-active');
+        darkMode.classList.toggle('darkLightMode-active');
     });
 }
 
