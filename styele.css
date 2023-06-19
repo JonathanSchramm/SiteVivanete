@@ -301,14 +301,12 @@ li{
         right: 0;
         height: 100vh;
         top: 0;
-        background-color: gray;
+        background-color: #5a6f78;
         z-index: 900;
-        display: flex;
+        display: none;
         align-items: center;
         flex-direction: column;
         width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
         justify-content: flex-start;
     }
     .navbar-nav li{
@@ -367,7 +365,7 @@ li{
 /*----------Medias Queries----------*/
 
 .nav-active{
-    transform: translateX(0%);
+    display: flex;
 }
 .burger-active .line1 {
     transform: rotate(45deg) translate(2px, 4px);
