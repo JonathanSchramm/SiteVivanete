@@ -307,11 +307,13 @@ li{
         top: 0;
         background-color: #5a6f78;
         z-index: 900;
-        display: none;
+        display: flex;
         align-items: center;
         flex-direction: column;
-        width: 50%;
+        width: 0%;
         justify-content: flex-start;
+        transition: .5s ease-in-out;
+        overflow-x: hidden;
     }
     .navbar-nav li{
         margin: 1em auto;
@@ -369,7 +371,7 @@ li{
 /*----------Medias Queries----------*/
 
 .nav-active{
-    display: flex;
+    width: 50%;
 }
 .burger-active .line1 {
     transform: rotate(45deg) translate(2px, 4px);
