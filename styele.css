@@ -283,11 +283,11 @@ li{
 }
 .plano-vivanete_content h1{
     margin-bottom: 1rem !important;
-    font-weight: 300!important;
+    font-weight: 500!important;
     font-size: calc(1.025rem + .3vw)!important;
 }
 .plano-vivanete_content h2{
-    font-weight: 500!important;
+    font-weight: 700!important;
     font-size: calc(1.125rem + .3vw)!important;
 }
 
