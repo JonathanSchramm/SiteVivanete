@@ -22,8 +22,15 @@ function darkMode() {
         bodyDarkMode.classList.toggle('dark-active');
         colorDark.classList.toggle('darkColor-active');
         darkMode.classList.toggle('darkLightMode-active');
+
+        if (document.body.classList.contains('dark-active')) {
+            document.body.style.color = "#fff";
+        } else {
+            document.body.style.color = "#000";
+        }
     });
 }
 
 darkMode();
+
 /*---------darkModeFunction---------*/

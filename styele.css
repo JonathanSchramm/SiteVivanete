@@ -277,9 +277,11 @@ li{
 .plano-vivanete_content{
     margin: 2rem auto;
     text-align: center;
-    border: 2px solid #2aa31b;
-    color: #2aa31b;
+    border: 2px solid transparent;
+    color: #fff;
     border-radius: 0.5rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(50deg, rgba(88,18,93,100) 21%, rgba(31,33,104,20) 71%);
 }
 .plano-vivanete_content h1{
     margin-bottom: 1rem !important;
@@ -289,6 +291,52 @@ li{
 .plano-vivanete_content h2{
     font-weight: 700!important;
     font-size: calc(1.125rem + .3vw)!important;
+}
+.ver-mais{
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.ver-mais-content{
+    align-items: center;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background: linear-gradient(50deg, rgb(88, 18, 93) 21%, rgb(31, 33, 104) 71%);
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.serviços{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+.serviços-title{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.serviços-title h2{
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.serviços-title h3{
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /*----------Medias Queries----------*/
@@ -327,7 +375,7 @@ li{
         max-width: 660px;
     }
     .navbar-nav{
-        position: absolute;
+        position: fixed;
         right: 0;
         height: 100vh;
         top: 0;
@@ -375,6 +423,10 @@ li{
         display: block;
         z-index: 991;
     }
+    .burger-active{
+        position: fixed;
+        right: 0;
+    }
     .owl-carousel{
         max-width: 660px;
     }
@@ -394,6 +446,9 @@ li{
     .plano-vivanete{
         max-width: 660px;
         width: 100%;
+    }
+    .ver-mais{
+        display: none;
     }
 }
 /*----------Medias Queries----------*/
