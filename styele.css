@@ -246,7 +246,7 @@ li{
     align-items: center;
 }
 .cards li:nth-child(2) h4{
-    background-color: #c2185b;
+    background-color: #1835c2;
     color: #fff;
     margin: 0;
     padding: 10px 30px;
@@ -322,6 +322,8 @@ li{
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
+    flex-direction: column;
+    gap: 1rem;
 }
 .serviços-title{
     display: flex;
@@ -337,6 +339,88 @@ li{
     line-height: 2rem;
     font-size: 1rem;
     font-weight: 400;
+}
+.service_content_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.service_card {
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service_card h2{
+    box-shadow: 0 8px 9px rgb(0 0 0 / 20%);
+    border-radius: 0.5rem;
+}
+.service_card:first-child{
+    background-color: #2aa31b;
+}
+.service_card:first-child h2{
+    background-color: #13af00;
+    width: 100%;
+}
+.service_card:nth-child(2){
+    background-color: #1835c2;
+}
+.service_card:nth-child(2) h2{
+    background-color: #2349ff;
+    width: 100%;
+}
+.service_card:nth-child(3){
+    background-color: #ff8100;
+}
+.service_card:nth-child(3) h2{
+    background-color: #ff8100;
+    width: 100%;
+}
+.service_card img{
+    max-width: 100%;
+    border-radius: .5rem;
+}
+.my-button {
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.service_card:first-child .my-button{
+    background-color: #4CAF50;
+}
+.service_card:nth-child(2) .my-button{
+    background-color: #2349ff;
+}
+.service_card:nth-child(3) .my-button{
+    background-color: #ff8100;
+}
+.service_card:first-child .my-button:hover {
+    background-color: #45a049;
+}
+.service_card:nth-child(2) .my-button:hover{
+    background-color: rgb(51, 84, 252);
+}
+.service_card:nth-child(3) .my-button:hover{
+    background-color: #24130124;
+}
+.my-button a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
 }
 
 /*----------Medias Queries----------*/
