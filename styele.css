@@ -13,7 +13,6 @@ html {
 
 body {
   background: #fff;
-  margin: 0.5rem 0.5rem;
 }
 
 header {
@@ -426,9 +425,29 @@ li{
 
 .logoWhats{
     position: fixed;
-    bottom: 20px;
+    bottom: 45px;
     right: 20px; 
     z-index: 1000;
+}
+
+footer{
+    background-color: #000;
+}
+
+.footerPrimary{
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    margin-top: 1em;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer a{
+    color: #fff !important;
 }
 
 /*----------Medias Queries----------*/
