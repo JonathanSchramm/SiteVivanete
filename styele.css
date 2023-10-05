@@ -423,6 +423,15 @@ li{
     color: #fff;
 }
 
+.logoWhats{
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    width: 50px; 
+    height: auto;
+    z-index: 1000;
+}
+
 /*----------Medias Queries----------*/
 @media (max-width:1300px){
     .dark-mode{
