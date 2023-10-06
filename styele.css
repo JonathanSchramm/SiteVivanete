@@ -444,6 +444,7 @@ footer{
     padding: 10px 10px;
     align-items: center;
     justify-content: space-between;
+    gap: 3em;
 }
 
 footer a{
