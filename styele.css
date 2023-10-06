@@ -586,6 +586,9 @@ footer a{
     .service_card h2{
         font-size: 18px;
     }
+    .logoWhats {
+        bottom: 9%;
+    }
 }
 /*----------Medias Queries----------*/
 
