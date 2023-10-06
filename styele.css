@@ -425,8 +425,8 @@ li{
 
 .logoWhats{
     position: fixed;
-    bottom: 45px;
-    right: 20px; 
+    bottom: 7%;
+    right: 5px; 
     z-index: 1000;
 }
 
